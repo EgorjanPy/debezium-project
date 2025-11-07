@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package api;
+
+
+message User {
+  int64 id = 1;
+  string email = 2;
+  string name = 3;
+  string lastName = 4;
+  repeated string role = 5;
+}
+message CreateUserRequest {
+  string email = 1;
+  string name = 2;
+  string lastName = 3;
+  repeated string role = 4;
+}
+service UserService {
+  rpc CreateUser (CreateUserRequest) returns (User);
+}

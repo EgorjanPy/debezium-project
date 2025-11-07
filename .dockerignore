@@ -1,0 +1,42 @@
+# Ignore common version control directories and files
+.git
+.gitignore
+.svn
+.hg
+
+# Ignore environment-specific files
+.env
+.flaskenv
+
+# Ignore node_modules for Node.js projects
+node_modules/
+
+# Ignore Python-specific files and directories
+__pycache__/
+*.pyc
+*.log
+venv/
+
+# Ignore build output directories
+dist/
+build/
+target/
+
+# Ignore editor/IDE specific files
+.vscode/
+.idea/
+
+# Ignore Docker-related files that are not part of the image
+Dockerfile
+docker-compose.yml
+
+# Ignore temporary or log files
+tmp/
+*.tmp
+*.log
+
+# Ignore macOS-specific files
+.DS_Store
+
+*_test.go
+**/testdata
