@@ -5,7 +5,7 @@ on: [push, pull_request]
 jobs:
   lint:
     runs-on: ubuntu-latest
-    container: golangci/golangci-lint:v1.61-alpine
+    container: golangci/golangci-lint:v2-alpine
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
